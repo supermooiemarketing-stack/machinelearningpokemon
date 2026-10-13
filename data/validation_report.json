@@ -1,0 +1,39 @@
+{
+  "examples": {
+    "train": 50000,
+    "val": 2000,
+    "test": 2000
+  },
+  "battles": {
+    "train": 9072,
+    "val": 367,
+    "test": 360
+  },
+  "checks_failed": {},
+  "repeated_positions_info": {
+    "same position in different battles of one split": 4,
+    "same position repeated in a battle, player chose differently": 3
+  },
+  "first_failure": {},
+  "tokens": {
+    "tokenizer": "unsloth/Qwen3.5-2B (snapshot fffbc0d8711cf87df6d1f97938c5e50ef94aadc7)",
+    "max": 690,
+    "longest_example": {
+      "split": "train",
+      "line": 39473,
+      "battle_id": "gen1ou-2262765976",
+      "step": 9
+    },
+    "median": 583.0,
+    "p95": 661,
+    "min": 255,
+    "over_limit": 0,
+    "limit": 2048,
+    "per_split_max": {
+      "train": 690,
+      "val": 682,
+      "test": 685
+    }
+  },
+  "rendered_template_example": "<|im_start|>system\nSelect one action ID from the provided legal-action list. Return only a JSON object with the single key \"action_id\". Do not add an explanation.<|im_end|>\n<|im_start|>user\nPokemon Showdown, Gen 1 OU. Choose your action.\nYour active Pokemon: Tauros (Normal), HP 100%, healthy; base HP 75, Atk 100, Def 95, Spc 70, Spe 110\nOpponent's active Pokemon: Tauros (Normal), HP 50%, healthy; base HP 75, Atk 100, Def 95, Spc 70, Spe 110\nOpponent's revealed moves: Body Slam, Hyper Beam\nLast moves: you used nothing; the opponent used Body Slam.\nPokemon left: you 4, opponent 3.\n\nLegal actions:\nA0 = use Blizzard: Ice, power 120, accuracy 90%, PP 8/8, 1x vs Tauros\nA1 = use Body Slam: Normal, power 85, accuracy 100%, PP 24/24, 1x vs Tauros\nA2 = use Earthquake: Ground, power 100, accuracy 100%, PP 16/16, 1x vs Tauros\nA3 = use Hyper Beam: Normal, power 150, accuracy 90%, PP 8/8, 1x vs Tauros\nA4 = switch to Alakazam (Psychic), HP 67%, healthy; base HP 55, Atk 50, Def 45, Spc 135, Spe 120; moves: Psychic, Recover, Seismic Toss, Thunder Wave\nA5 = switch to Exeggutor (Grass/Psychic), HP 100%, healthy; base HP 95, Atk 95, Def 85, Spc 125, Spe 55; moves: Explosion, Mega Drain, Psychic, Sleep Powder\nA6 = switch to Snorlax (Normal), HP 23%, healthy; base HP 160, Atk 110, Def 65, Spc 65, Spe 30; moves: Body Slam, Hyper Beam, Reflect, Rest<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n{\"action_id\":\"A1\"}<|im_end|>\n"
+}

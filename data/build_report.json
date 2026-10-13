@@ -1,0 +1,118 @@
+{
+  "config": {
+    "archive": "gen1ou.tar.gz",
+    "out": "data",
+    "sizes": [
+      50000,
+      2000,
+      2000
+    ],
+    "max_turns_per_pov": 3,
+    "val_frac": 0.1,
+    "test_frac": 0.1,
+    "min_rating": 1400,
+    "unrated": "smogtours",
+    "seed": 1234
+  },
+  "archive_sha256": "d8d1ac27e7ff3ca822e150a48bf99c064e3bb19011e5d12345dc82ad54b9e3c3",
+  "pov_files_total": 199024,
+  "pov_files_after_rating_filter": 67825,
+  "duplicate_battle_copies_dropped": 1104,
+  "battle_pool_per_split": {
+    "train": 28758,
+    "val": 3506,
+    "test": 3604
+  },
+  "splits": {
+    "train": {
+      "examples": 50000,
+      "target_size": 50000,
+      "battles": 9072,
+      "pov_files": 16670,
+      "forced_switch_examples": 3961,
+      "targets": {
+        "A0": 9928,
+        "A1": 10249,
+        "A2": 7304,
+        "A3": 6075,
+        "A4": 5349,
+        "A5": 4745,
+        "A6": 3551,
+        "A7": 2084,
+        "A8": 715
+      },
+      "move_vs_switch": {
+        "move": 33556,
+        "switch": 16444
+      },
+      "sources": {
+        "smogtours": 42991,
+        "ladder": 7009
+      },
+      "rated_examples": 7009
+    },
+    "val": {
+      "examples": 2000,
+      "target_size": 2000,
+      "battles": 367,
+      "pov_files": 667,
+      "forced_switch_examples": 170,
+      "targets": {
+        "A0": 388,
+        "A1": 401,
+        "A2": 332,
+        "A3": 226,
+        "A4": 209,
+        "A5": 190,
+        "A6": 147,
+        "A7": 82,
+        "A8": 25
+      },
+      "move_vs_switch": {
+        "move": 1347,
+        "switch": 653
+      },
+      "sources": {
+        "smogtours": 1736,
+        "ladder": 264
+      },
+      "rated_examples": 264
+    },
+    "test": {
+      "examples": 2000,
+      "target_size": 2000,
+      "battles": 360,
+      "pov_files": 667,
+      "forced_switch_examples": 165,
+      "targets": {
+        "A0": 378,
+        "A1": 423,
+        "A2": 275,
+        "A3": 265,
+        "A4": 221,
+        "A5": 198,
+        "A6": 118,
+        "A7": 86,
+        "A8": 36
+      },
+      "move_vs_switch": {
+        "move": 1341,
+        "switch": 659
+      },
+      "sources": {
+        "ladder": 243,
+        "smogtours": 1757
+      },
+      "rated_examples": 243
+    }
+  },
+  "skipped_decisions": {
+    "eligible but not sampled (per-POV cap)": 853636,
+    "unrevealed action (-1)": 194568,
+    "move label not confirmed by next state (move never ran)": 32906,
+    "only one legal option": 8321,
+    "eligible but split already full": 10,
+    "label not legal in state (e.g. chosen move shows 0 PP)": 1
+  },
+  "seconds": 1025.5
+}
